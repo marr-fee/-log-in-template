@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family:  "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+}
+
+.conatiner{
+  margin: 25px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 30px;
+  width: 830px;
+  max-width: 100%;
+  background-color: fff;
+  padding: 0;
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.background-1{
+  background-color: #512da8;
+  height: 100%;
+  background: linear-gradient(180deg, #5c6bc0, #512da8);
+  width: 50%;
+  border-radius: 20px 150px 100px 20px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 55;
+  transition: transform 0.9s ease-in-out;
+  color: #fff;
+}
+
+.move1{
+  transform: translateX(140%);
+  z-index: 6;
+}
+
+.background-2{
+  background-color: #512da8;
+  height: 100%;
+  background: linear-gradient(180deg, #5c6bc0, #512da8);
+  width: 60%;
+  border-radius: 150px 20px 20px 100px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 8;
+  left: -35%;
+  transition: transform 0.9s ease-in-out;
+  color: #fff;
+}
+ .move2{
+  transform: translateX(140%);
+  z-index: 30;
+}
+
+.form-container-sign-in{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.form-container-sign-up{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.sign-up{
+  position: absolute;
+  background-color: white;
+  transition: transform 0.9s ease-in-out;
+  z-index: 5;
+
+}
+
+ .sign-up-inactive{
+  transform: translateX(-110%);
+  z-index: 2;
+}
+
+.sign-in{
+  position: absolute;
+  background-color: white;
+  transition: transform 0.9s ease-in-out;
+  z-index: 5;
+}
+
+.sign-in-inactive{
+  transform: translateX(95%);
+  z-index: 2;
+}
+
+.socials img{
+  width: 20px;
+  height: 20px;
+  margin: 8px 10px 20px 10px ;
+  background: transparent;
+}
+
+form{
+  width: 100%;
+  height: 100%;
+  padding: 55px;
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+}
+
+form h1{
+  color: black;
+  margin-bottom: 25px;
+}
+
+input{
+  background-color: #eee;
+  border: none;
+  margin: 5px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+
+}
+
+.seperator{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #888;
+}
+.seperator::before, .seperator::after{
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #1110103a;
+  margin: 5px;
+}
+
+.seperator span{
+  padding: 0 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.go-to-sign-in{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.9s ease-in-out;
+}
+
+.move-hello{
+  transform: translateX(43%);
+}
+
+.go-to-sign-up{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 50%;
+  transition: transform 0.9s ease-in-out;
+}
+
+.move-welcome{
+  transform: translateX(250%);
+}
+
+.go-to-sign-in h1, .go-to-sign-up h1{
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.go-to-sign-in p, .go-to-sign-up p{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+button{
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #dbc2be63;
+  cursor: pointer;
+}
